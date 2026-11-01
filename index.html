@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Epicor Website Widget Test</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f3f5f9;
+      margin: 0;
+      padding: 24px;
+      color: #243247;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 24px;
+      box-shadow: 0 2px 8px #0001;
+    }
+    button {
+      background: #0878d1;
+      color: white;
+      border: 0;
+      border-radius: 6px;
+      padding: 12px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Epicor Kinetic - Website Widget</h2>
+    <p>GitHub Pages hosting test</p>
+    <h3 id="status">Website loaded successfully!</h3>
+    <button onclick="testWidget()">Test Interaction</button>
+  </div>
+
+  <script>
+    function testWidget() {
+      document.getElementById("status").textContent =
+        "JavaScript is working inside Epicor!";
+    }
+  </script>
+</body>
+</html>
